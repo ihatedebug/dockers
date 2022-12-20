@@ -1,5 +1,6 @@
-FROM nvcr.io/nvidia/pytorch:19.08-py3
-    RUN apt-get update
+# TODO: find version from nvidia matrix pytorch:xx.xx
+FROM nvcr.io/nvidia/pytorch:19.08-py3 
+    RUN apt-get update && apt-get dist-upgrade
     
     # support ssh connection
     RUN apt-get install -y openssh-server
