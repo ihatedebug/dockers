@@ -25,3 +25,10 @@ docker build -t torch120 .
 
 docker run --ipc=host -p [HOST_PORT_NAME_FOR_DOCKER]:7777 --name=test_torch --gpus 2 -v /hdd/data:/data -v /home/user:/workspace -dit torch120
 ```
+
+### Memo
+- ssh root로 해야 함
+- portname 7777 인지 22 인지는 container 안에서 확인
+- TODO
+  - zsh설치 & custom 커맨트
+  - tmux 설치 커맨드
